@@ -112,7 +112,7 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		// clean up bitmap cache?
+		AppController.getInstance().cancelPendingRequests(TAG);
 	}
 
 	@Override
@@ -124,8 +124,6 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-			case R.id.action_settings:
-				return true;
 			default:
 				break;
 		}
