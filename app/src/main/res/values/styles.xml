@@ -1,0 +1,45 @@
+<resources>
+
+	<style name="AppTheme" parent="AppTheme.Base">
+		<!-- Base application theme.
+		Defining this lets values-v21/styles.xml reuse it with changes. -->
+	</style>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- customize the color palette -->
+		<item name="colorPrimary">@color/material_teal_500</item>
+		<item name="colorPrimaryDark">@color/material_teal_700</item>
+		<item name="colorAccent">@color/material_cyan_500</item>
+
+		<!-- main background -->
+		<!--<item name="android:windowBackground">@color/white</item>-->
+
+		<!-- overlay action bar on toolbar -->
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+
+	<!-- Toolbar Styles -->
+	<style name="MyToolbarStyle" parent="MyToolbarStyle.Base"/>
+
+	<style name="MyToolbarStyle.Base" parent="Widget.AppCompat.Toolbar">
+		<item name="android:background">@color/material_teal_500</item>
+		<item name="theme">@style/MyToolbarTheme</item>
+		<item name="popupTheme">@style/MyPopupTheme</item>
+	</style>
+
+	<style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+		<!-- title text  -->
+		<item name="android:textColorPrimary">@color/white</item>
+		<!-- menu item text color -->
+		<item name="actionMenuTextColor">@color/white</item>
+		<!-- overflow icon color -->
+		<item name="android:textColorSecondary">@color/white</item>
+	</style>
+
+	<style name="MyPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+		<item name="android:textColorPrimary">@color/black</item>
+		<!--<item name="android:background">@color/material_brown_50</item>-->
+	</style>
+
+</resources>

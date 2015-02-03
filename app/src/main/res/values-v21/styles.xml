@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="AppTheme" parent="AppTheme.Base">
+		<!-- Base application theme.
+		Defining this lets values-v21/styles.xml reuse it with changes. -->
+	</style>
+
+	<!-- Toolbar Styles -->
+	<style name="MyToolbarStyle" parent="MyToolbarStyle.Base">
+		<item name="android:elevation">8dp</item>
+	</style>
+
+</resources>
