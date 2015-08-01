@@ -1,4 +1,4 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.utils;
 
 import android.app.Application;
 import android.text.TextUtils;

@@ -1,7 +1,7 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.ui;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -16,6 +16,13 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.henningta.cryptoquips.utils.AppController;
+import com.henningta.cryptoquips.data.CryptoquipData;
+import com.henningta.cryptoquips.data.DataAdapter;
+import com.henningta.cryptoquips.views.EmptyRecyclerView;
+import com.henningta.cryptoquips.utils.PrecachingLayoutManager;
+import com.henningta.cryptoquips.R;
+import com.henningta.cryptoquips.utils.Utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -24,7 +31,7 @@ import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
 	public static final String TAG = MainActivity.class.getSimpleName();
 
@@ -35,8 +42,8 @@ public class MainActivity extends ActionBarActivity {
 
 		// init toolbar
 		Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+		toolbar.setTitle(R.string.app_name);
 		setSupportActionBar(toolbar);
-		getSupportActionBar().setTitle(R.string.app_name);
 
 		// init list
 		final EmptyRecyclerView quipsList = (EmptyRecyclerView)findViewById(R.id.quips_list);
@@ -124,7 +131,9 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-			default:
+			case R.id.action_about:
+				AboutDialog dialog = new AboutDialog();
+				dialog.show(getFragmentManager(), AboutDialog.TAG);
 				break;
 		}
 

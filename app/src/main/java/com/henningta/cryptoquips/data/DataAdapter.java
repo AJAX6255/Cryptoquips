@@ -1,4 +1,4 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.data;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
+import com.henningta.cryptoquips.utils.AppController;
+import com.henningta.cryptoquips.R;
 
 import java.util.ArrayList;
 

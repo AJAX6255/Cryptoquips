@@ -1,4 +1,4 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.data;
 
 public class CryptoquipData {
 

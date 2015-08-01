@@ -1,4 +1,4 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.views;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

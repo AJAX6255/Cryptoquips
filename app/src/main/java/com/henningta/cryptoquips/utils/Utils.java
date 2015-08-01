@@ -1,4 +1,4 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

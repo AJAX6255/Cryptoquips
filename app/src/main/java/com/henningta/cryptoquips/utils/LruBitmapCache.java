@@ -1,4 +1,4 @@
-package com.henningta.cryptoquips;
+package com.henningta.cryptoquips.utils;
 
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;

@@ -32,7 +32,7 @@
 				android:visibility="gone"/>
 		</RelativeLayout>
 
-		<com.henningta.cryptoquips.EmptyRecyclerView
+		<com.henningta.cryptoquips.views.EmptyRecyclerView
 			android:id="@+id/quips_list"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
